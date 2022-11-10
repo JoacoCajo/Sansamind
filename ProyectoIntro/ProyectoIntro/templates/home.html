@@ -8,6 +8,6 @@
     <p><a href="{% url 'logout' %}">Cerrar sesión</a></p>
 {% else %}
   <p>No has iniciado sesión.</p>
-  <a href="{% url 'login' %}">Inicia sesión</a>
+  <a href="{% url 'login' %}">Inicia sesión <a  href="{% url 'register' %}"> Registrate </a>    
 {% endif %}
 {% endblock %}
