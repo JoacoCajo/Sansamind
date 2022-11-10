@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>SANSANIDAD</title>
+    <h1>SANSANIDAD</h1>
+    <img src="logo.png">
+    {% block titulo %}<h2>Pagina que navega</h2>{% endblock %}
+    <nav class="Secciones principales">
+        <ul>
+            <li><a href='/home'>Inicio</a> </li>
+            <li><a href='/foro'>Foro</a></li> 
+            <li><a href='/test'>Test</a></li>
+            <li><a href='/faq'>F.A.Q. </a></li>
+            <li><a href='/about'>Información</a></li>
+        </ul>    
+    </nav>
+</head>
+<aside>
+    {% block lateral %}
+    {% endblock %}
+</aside>
+{% block parrafo %}
+{% endblock %}
+<footer>
+    <p><small>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sint aliquid quas earum eligendi quis ipsa adipisci voluptatem possimus enim placeat, quam atque perferendis neque tempore officia vitae voluptas porro.
+    </small></p>
+</footer>
+</html>
