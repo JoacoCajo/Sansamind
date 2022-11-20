@@ -1,6 +1,8 @@
 from django.http import HttpResponse
 from django.template import Template, Context
-
+from django.template.loader import get_template
+from django.shortcuts import render
+from django.http import HttpResponse
 
 
 def hola_mundo(request): # primera vista
@@ -23,3 +25,17 @@ def casa(request):
     cxt=Context()
     casa=plt.render(cxt)
     return HttpResponse(casa)
+def home(request):
+    return render(request,'home.html')
+
+def test(request):
+    return render(request,'test.html')
+
+def foro(request):
+    return render(request,'foro.html')
+
+def faq(request):
+    return render(request,'faq.html')
+
+def about(request):
+    return render(request,'about.html')
