@@ -1,0 +1,1 @@
+operaciones=(("Estrés", "Estrés"),("Depresión", "Depresión"), ("Burnout", "Burnout"), ("Cansancio", "Cansancio"), ("Insomnio","Insomnio"))
