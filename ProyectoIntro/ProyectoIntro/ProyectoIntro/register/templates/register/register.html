@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Crea una cuenta{% endblock %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+     <form method="POST" class="form-group">
+		<input type="hidden" name="csrfmiddlewaretoken" value="ZPNcaVf04g4NiD39BAgGYf2yubANxdokJN3Vz6WmhQoBSF7tkjHxsZYRJElXZzLH">
+		
+		
+
+<div id="div_id_username" class="form-group"> <label for="id_username" class=" requiredField">
+                Usuario<span class="asteriskField">*</span> </label> <div> <input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus class="textinput textInput form-control" required id="id_username"> <small id="hint_id_username" class="form-text text-muted">Permitido: letras, dígitos y caracteres especiales @/./+/-/_.</small> </div> </div> <div id="div_id_password1" class="form-group"> <label for="id_password1" class=" requiredField">
+                Contraseña<span class="asteriskField">*</span> </label> <div> <input type="password" name="password1" autocomplete="new-password" class="textinput textInput form-control" required id="id_password1"> <small id="hint_id_password1" class="form-text text-muted"><ul><li>Tu contraseña debe ser distinta a tu nombre de usuario.</li><li>Tu contraseña debe tener mínimo 8 caracteres.</li><li>Tu contraseña no puede contener solo dígitos.</li></ul></small> </div> </div> <div id="div_id_password2" class="form-group"> <label for="id_password2" class=" requiredField">
+                Confirma tu contraseña<span class="asteriskField">*</span> </label> <div> <input type="password" name="password2" autocomplete="new-password" class="textinput textInput form-control" required id="id_password2"> <small id="hint_id_password2" class="form-text text-muted"></small> </div> </div> <div id="div_id_email" class="form-group"> <label for="id_email" class=" requiredField">
+                Email<span class="asteriskField">*</span> </label> <div> <input type="email" name="email" class="emailinput form-control" required id="id_email"> </div> </div>
+
+		<button type="submit" class="btn btn-success">Registrarte</button>
+    </form>
+{% endblock %}
