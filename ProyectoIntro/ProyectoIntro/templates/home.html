@@ -1,7 +1,4 @@
 {% extends 'base.html' %}
-
-{% block title %}Home{% endblock %}
-
 {% block content %}
 {% if user.is_authenticated %}
   Hola {{ user.username }}!
@@ -11,3 +8,10 @@
   <a href="{% url 'login' %}">Inicia sesión <a  href="{% url 'register' %}"> Registrate </a>    
 {% endif %}
 {% endblock %}
+{% block title %}Home{% endblock %}
+
+{% block parrafo %}
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat fuga itaque expedita quam, quod odit magni, perferendis nostrum pariatur neque aliquam numquam omnis iure? Repellat, natus consectetur? Culpa, officia asperiores.</p>
+
+{% endblock %}
+
