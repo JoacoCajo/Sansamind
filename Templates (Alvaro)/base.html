@@ -21,7 +21,7 @@
             aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarColor03">
+          <div class="collapse navbar-collapse" id="navbarColor02">
             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
               <li class="nav-item">
                 <a class="nav-link active" href='/home'>Inicio
@@ -35,25 +35,88 @@
                 <a class="nav-link" href='/test'>Test</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href='/faq'>Faq.</a>
+                <a class="nav-link" href='/faq'>FAQs</a>
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle show" href='#' data-bs-toggle="dropdown" aria-expanded="true">Información</a>
-                  <ul class="dropdown-menu show">
-                    <li><a class="dropdown-item" href='/about'>Nosotros</a></li>
-                    <li><a class="dropdown-item" href='/about'>Ansiedad</a></li>
-                    <li><a class="dropdown-item" href='/about'>Burnout</a></li>
-                    <li><a class="dropdown-item" href='/about'>Depresion</a></li>
-                  </ul>
-              </li>
+
+                <style>
+                  .dropbtn {
+                    margin-top: 6.5px;
+                    background-color: transparent;
+                    color:#ffffff88;
+                    border: none;
+                    cursor: pointer;
+                  }
+
+                  .dropbtn:hover, .dropbtn:focus
+                  { background-color: #b0c5da; }
+
+                  .dropdown {
+                    position: sticky;
+                    display: inline-block;
+                  }
+                
+                  .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f1f1f1;
+                    min-width: 160px;
+                    overflow: auto;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                  }
+                
+                  .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                  }
+                
+                  .show {display: block;}
+                </style>
+
+                  <ul>
+                    <li class="nav-item dropdown">
+                      <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"> Información </button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#nosotros">Nosotros</a>
+                          <a href="#ansiedad">Ansiedad</a>
+                          <a href="#burnout">Burnout</a>
+                          <a href="#depresión">Depresión</a>
+                        </div>
+                      </div></li>
+                    
+                    <script>
+                    function myFunction() 
+                    { document.getElementById("myDropdown").classList.toggle("show"); }
+                   
+                    window.onclick = function(event) {
+                      if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                          var openDropdown = dropdowns[i];
+                          if (openDropdown.classList.contains('show'))
+                          { openDropdown.classList.remove('show'); }
+                        }
+                      }
+                    }
+                  </script>
             </ul>
-          </div>
         </div>
       </nav>
 </header>
 <br>
-<aside style="float:right; margin-right:40px; height:250px; width:400px; overflow-y:scroll; border:3px solid #ffffff7e; color:rgb(141, 48, 48); background-color:#ffffff7e;">
-  Noticias de Psicologia o por nosotros mismos
+<aside style="float:right;
+margin-right:40px;
+height:250px;
+width:400px;
+overflow-y:scroll;
+border:3px solid #ffffff7e;
+color:rgb(141, 48, 48);
+background-color:#ffffff7e;"
+  >  Noticias de Psicologia o por nosotros mismos
 </aside>
 <br>
 
@@ -68,6 +131,50 @@
 </body>
 <br>
 
+<p> h </p>
+<p> h </p>
+<p> h </p>
+<p> h </p>
+<p> h </p>
 
 </html>
-      
+
+<div class="container">
+  
+  <footer class="mt- auto py-0 my-0">
+    
+    <ul class="nav justify-content-center border-bottom">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Foro</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Test</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Información</a></li>
+    </ul>
+  
+    <div class="container-fluid border-bottom pb-2 justify-content-center text-light">
+      <footer>
+          <div class="row justify-content-center">
+            <div class="col-yl-2 col-md-2 col-sm-4 col-auto order-1 align-self-end ">
+              <h6 class="mt-55 mt-2 text-muted bold-text"><b>Álvaro Aceituno</b></h6><small>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span> alvaro.aceitunoa@usm.cl </small></div>
+
+            <div class="col-yl-2 col-md-2 col-sm-4 col-auto order-2 align-self-end ">
+              <h6 class="text-muted bold-text"><b>Joaquín Viveros</b></h6><small>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span> joaquin.viveros@usm.cl </small></div>
+
+            <div class="col-yl-2 col-md-2 col-sm-4 col-auto order-3 align-self-end ">
+              <h6 class="mt-55 mt-2 text-muted bold-text"><b>Iván Arenas</b></h6><small>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span> ivan.arenas@usm.cl </small></div>
+
+            <div class="col-yl-2 col-md-2 col-sm-4 col-auto order-4 align-self-end ">
+              <h6 class="mt-55 mt-2 text-muted bold-text"><b>Martina Álvarez</b></h6><small>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span> martina.alvarez@usm.cl </small></div>
+          </div>
+      </footer>
+    </div>
+
+  </ul>
+    <p class="text-center text-muted mt-2">&copy; 2022 SANSANIDAD All Rights Reserved. </p>
+  </footer>
+  
+</div>
