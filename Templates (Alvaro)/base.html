@@ -12,6 +12,7 @@
     <title>SANSANIDAD</title>
 </head>
 
+<!--Inicio del header-->
 <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -80,7 +81,7 @@
                       <div class="dropdown">
                         <button onclick="myFunction()" class="dropbtn"> Información </button>
                         <div id="myDropdown" class="dropdown-content">
-                          <a href="#nosotros">Nosotros</a>
+                          <a href="/about">Nosotros</a>
                           <a href="#ansiedad">Ansiedad</a>
                           <a href="#burnout">Burnout</a>
                           <a href="#depresión">Depresión</a>
@@ -108,47 +109,59 @@
       </nav>
 </header>
 <br>
-<aside style="float:right;
-margin-right:40px;
-height:250px;
-width:400px;
-overflow-y:scroll;
-border:3px solid #ffffff7e;
-color:rgb(141, 48, 48);
-background-color:#ffffff7e;"
-  >  Noticias de Psicologia o por nosotros mismos
-</aside>
-<br>
+<!--Fin del header-->
 
+<!--Cuerpo de la página-->
 <body style="background-color:#b0c5da;">
-    {% block parrafo %}
-    {% endblock %}
-    <footer class="blog-footer">
-      <p><small>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit sint aliquid quas earum eligendi quis ipsa adipisci voluptatem possimus enim placeat, quam atque perferendis neque tempore officia vitae voluptas porro.
-      </small></p>
-  </footer>
+  <!--Barra laterla de información-->
+  <aside style="float:right; margin-right:40px; height:250px; width:400px; overflow-y:scroll; border:3px solid #ffffff7e; color:rgb(141, 48, 48);background-color:#ffffff7e;">
+    <body>
+      <h6>Noticias de Psicologia o por nosotros mismos</h6>
+      <br>
+      <p>
+        Videos para relajarse</p>
+        <br>
+        <p>
+        Ultimas noticias de la página</p>
+        <br>
+        <p>
+        Ansiedad</p>
+        <br>
+        <p>
+        Burnout</p>
+        <br>
+        <p>
+        Depresion
+      </p>
+
+    </body>
+  </aside>
+  <!--Inicio del parrafo-->
+  {% block parrafo %}
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  <p>h</p>
+  {% endblock %}
+  <!--Fin del parrafo-->
 </body>
-<br>
 
-<p> h </p>
-<p> h </p>
-<p> h </p>
-<p> h </p>
-<p> h </p>
-
-</html>
-
+<!--footer de la página-->
 <div class="container">
   
   <footer class="mt- auto py-0 my-0">
     
     <ul class="nav justify-content-center border-bottom">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Inicio</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Foro</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Test</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Información</a></li>
+      <li class="nav-item"><a href="/home" class="nav-link px-2 text-muted">Inicio</a></li>
+      <li class="nav-item"><a href="/foro" class="nav-link px-2 text-muted">Foro</a></li>
+      <li class="nav-item"><a href="/test" class="nav-link px-2 text-muted">Test</a></li>
+      <li class="nav-item"><a href="/faq" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">Información</a></li>
     </ul>
   
     <div class="container-fluid border-bottom pb-2 justify-content-center text-light">
@@ -176,5 +189,7 @@ background-color:#ffffff7e;"
   </ul>
     <p class="text-center text-muted mt-2">&copy; 2022 SANSANIDAD All Rights Reserved. </p>
   </footer>
-  
+
 </div>
+
+</html>
