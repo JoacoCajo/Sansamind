@@ -9,11 +9,14 @@ def home(request):
 def test(request):
     return render(request,'test.html')
 
-def foro(request):
-    return render(request,'foro.html')
+def testimonio(request):
+    return render(request,'testimonio.html')
 
 def faq(request):
     return render(request,'faq.html')
 
 def about(request):
     return render(request,'about.html')
+
+def ansiedad(request):
+    return render(request,'ansiedad.html')
